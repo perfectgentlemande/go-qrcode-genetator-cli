@@ -8,23 +8,18 @@ import (
 	"github.com/skip2/go-qrcode"
 )
 
-const (
-	inputTypeJSON    = "json"
-	inputTypeMessage = "message"
-	inputTypeTXT     = "txt"
-)
-
 func main() {
 	message := flag.String("m", "no message", "message input")
-	filename := flag.String("o", "unknown.png", "output filename")
-	inputType := flag.String("i", inputTypeMessage, "input type")
+	outputFilename := flag.String("o", "unknown.png", "output filename")
+	inputFilename := flag.String("i", "input.txt", "input filename")
 
 	flag.Parse()
 
 	fmt.Println(*message)
-	fmt.Println(*inputType)
+	fmt.Println(*inputFilename)
+	fmt.Println(*outputFilename)
 
-	err := qrcode.WriteFile(*message, qrcode.Medium, 256, *filename)
+	err := qrcode.WriteFile(*message, qrcode.Medium, 256, *inputFilename)
 	if err != nil {
 		log.Fatalf("cannot write file: %v", err)
 	}
