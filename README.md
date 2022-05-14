@@ -2,9 +2,8 @@
 
 Simple QR Code generator
 
-## Usage
-
-As simple as:  
+## Install
+ 
 `go install github.com/perfectgentlemande/go-qrcode-genetator-cli` 
 
 :D:D:D
