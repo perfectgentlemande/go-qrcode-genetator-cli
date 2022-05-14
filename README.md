@@ -1,6 +1,6 @@
-# go-qrcode-genetator-cli
-
 # <img src="https://raw.githubusercontent.com/perfectgentlemande/go-qrcode-genetator-cli/main/example.png"/>
+
+# go-qrcode-genetator-cli
 Simple QR Code generator
 
 ## Install
